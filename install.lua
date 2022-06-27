@@ -1,4 +1,5 @@
 shell.run("wget https://raw.githubusercontent.com/rxi/json.lua/master/json.lua json.lua")
+shell.run("wget https://raw.githubusercontent.com/MausTipTop100/cct-auth-tablet/main/startup.lua startup.lua")
 
 json = require "json"
 
@@ -68,7 +69,11 @@ if not (pcall(function()
         create_user(code, level, function(uuid)
             local h = fs.open(uuid_file, "w")
             h.write(uuid)
+            h.close()
+            os.reboot()
         end)
+    else
+        error("invalid level")
     end
 end)) then
     error("an unknown error occurred")
