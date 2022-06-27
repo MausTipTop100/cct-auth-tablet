@@ -6,13 +6,13 @@ a lua program for minecraft mod cc: tweaked
 At first, download the installation file:  
 
 ```bash
-wget https://github.com/MausTipTop100/cct-auth-tablet/blob/main/install.lua install-auth.lua
+wget https://github.com/MausTipTop100/cct-auth-tablet/blob/main/install.lua install.lua
 ```
 
 Then execute it:
 
 ```bash
-install-auth
+install
 ```
 
 Now follow the installation instructions.
